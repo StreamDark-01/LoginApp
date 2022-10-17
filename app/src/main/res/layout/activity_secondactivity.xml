@@ -1,35 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:backgroundTintMode="src_over"
+    android:orientation="vertical"
+    tools:context=".secondactivity"
+    android:background="@color/LightYellow"
+    android:layout_gravity="center_vertical"
+    >
 
 
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="143dp"
+        app:srcCompat="@drawable/logo_app"
+        android:layout_marginTop="50dp"/>
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize">
-
-        </androidx.appcompat.widget.Toolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-
-    <include
-        layout="@layout/content_second"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="PROFILE "
+        android:textColor="#131211"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="NAME"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#283618"
+        android:textSize="25dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#283618"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="BIRTHDATE"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#283618"
+        android:textSize="25dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tvBirthday"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#283618"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ADDRESS"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#283618"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#283618"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
 
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="NO TELEFON"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#283618"
+        android:textSize="25dp"
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        />
+
+    <TextView
+        android:id="@+id/tvPhoneNo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#283618"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+</LinearLayout>
